@@ -1,0 +1,58 @@
+@import url(//fonts.googleapis.com/css?family=Quicksand);
+
+body {
+  margin: 0px; body: 0px; font-family: Helvetica, Arial, sans-serif;
+}
+.container {
+  margin: 50px auto;
+}
+footer {
+  font-size: 11.5px;
+}
+.promo {
+  margin-top: 50px;
+}
+.promo img {
+  box-shadow: 0px 0px 15px #ccc;
+}
+.promo p {
+  margin: 15px 0px; text-align: center;
+}
+.bookmark {
+  padding: 20px;
+}
+.bookmark a {
+  text-decoration: none;
+}
+header {
+  font-family: Quicksand, Arial, sans-serif; text-transform: uppercase; font-size: 28px; height: 62px; background-color: #000; color: #fff; line-height: 62px; padding: 0px 20px;
+}
+.bookmark .title {
+  margin: 10px 0px 30px 0px;
+}
+.bookmark h1 {
+  text-align: center; margin: 0px;
+}
+.bookmark .link {
+  font-size: 14px; text-align: center; margin: 30px 0px;
+}
+.bookmark .link a {
+  color: #666;
+}
+.bookmark .screenshot {
+  width: 350px; margin: 0px auto;
+}
+.bookmark .screenshot img {
+  box-shadow: 0px 0px 20px 0px #ccc; width: 350px; height: 300px;
+}
+.bookmark .viewButton {
+  display: block; height: 62px; line-height: 62px; text-align: center; border-radius: 7px; color: #ffffff; font-size: 22px; text-transform: none; font-weight: 500;
+  background: #2999ff; /* Old browsers */
+  background: -moz-linear-gradient(top, #2999ff 0%, #2834a9 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2999ff), color-stop(100%,#2834a9)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #2999ff 0%,#2834a9 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #2999ff 0%,#2834a9 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #2999ff 0%,#2834a9 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #2999ff 0%,#2834a9 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2999ff', endColorstr='#2834a9',GradientType=0 ); /* IE6-9 */
+}
