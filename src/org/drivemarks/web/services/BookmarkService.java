@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.drivemarks.web.services;
+package org.drivemarks.web.services;
 
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.services.drive.Drive;

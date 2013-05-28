@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.drivemarks.web;
+package org.drivemarks.web;
 
 import java.io.IOException;
 import java.util.Arrays;

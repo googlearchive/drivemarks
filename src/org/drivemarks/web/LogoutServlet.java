@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.drivemarks.web;
+package org.drivemarks.web;
 
 import java.io.IOException;
 
@@ -22,38 +22,20 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.drivemarks.web.models.State;
-import com.drivemarks.web.services.GetService;
-import com.google.api.client.googleapis.json.GoogleJsonResponseException;
-import com.google.api.services.drive.model.File;
-
 /**
- * Opens a bookmark and redirects user to the bookmark URL.
+ * Logs out the current user and redirects to homepage.
  * @author jbd@google.com (Burcu Dogan)
  */
 @SuppressWarnings("serial")
-public class RedirectServlet extends BaseServlet {
+public class LogoutServlet extends BaseServlet {
+  
   /**
-   * Redirects user to the file's URL. Redirects to consent
-   * page if there are no users in the session.
+   * Logout the user and redirect to the start page.
    */
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
-    State state = getState(req);
-    // each valid open with action contains a state
-    // parameter, ignore the request if there are no
-    // state parameter is set.
-    if (state == null) {
-      resp.sendError(400);
-      return;
-    }
-    String fileId = state.firstFileId();
-    try {
-      File file = new GetService(getCredential(req, resp)).get(fileId);
-      resp.sendRedirect(file.getDescription());
-    } catch (GoogleJsonResponseException e) {
-      loginIfRequired(req, resp, e);
-    }
+    deleteCredential(req, resp);
+    resp.sendRedirect("/");
   }
 }

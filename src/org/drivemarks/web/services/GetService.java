@@ -14,28 +14,35 @@
  * under the License.
  */
 
-package com.drivemarks.web;
+package org.drivemarks.web.services;
 
 import java.io.IOException;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import com.google.api.client.auth.oauth2.Credential;
+import com.google.api.services.drive.model.File;
 
 /**
- * Handles the homepage.
+ * A service to retrieve metadata about a file.
  * @author jbd@google.com (Burcu Dogan)
  */
-@SuppressWarnings("serial")
-public class HomepageServlet extends BaseServlet {
-  
+public class GetService extends AbstractDriveService {
+
   /**
-   * Handles the start page on GET /
+   * Constructs a new {@code GetService} instance.
+   * @param credential User credentials.
    */
-  @Override
-  protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-      throws ServletException, IOException {
-    handleCallbackIfRequired(req, resp);
-    render(resp, "index.ftl", null);
+  public GetService(Credential credential) {
+    super(credential);
   }
+
+  /**
+   * Gets metadata of the given file.
+   * @param fileId The ID of the file to get metadata for.
+   * @return A {@code File} object.
+   * @throws IOException
+   */
+  public File get(String fileId) throws IOException {
+    return getDriveService().files().get(fileId).execute();
+  }
+
 }

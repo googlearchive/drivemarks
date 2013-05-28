@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
   <servlet>
     <servlet-name>HomepageServlet</servlet-name>
-    <servlet-class>com.drivemarks.web.HomepageServlet</servlet-class>
+    <servlet-class>org.drivemarks.web.HomepageServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>HomepageServlet</servlet-name>
@@ -12,7 +12,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>BookmarkServlet</servlet-name>
-    <servlet-class>com.drivemarks.web.BookmarkServlet</servlet-class>
+    <servlet-class>org.drivemarks.web.BookmarkServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>BookmarkServlet</servlet-name>
@@ -20,7 +20,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>com.drivemarks.web.LoginServlet</servlet-class>
+    <servlet-class>org.drivemarks.web.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LogoutServlet</servlet-name>
@@ -28,7 +28,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>LogoutServlet</servlet-name>
-    <servlet-class>com.drivemarks.web.LogoutServlet</servlet-class>
+    <servlet-class>org.drivemarks.web.LogoutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
@@ -36,7 +36,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>RedirectServlet</servlet-name>
-    <servlet-class>com.drivemarks.web.RedirectServlet</servlet-class>
+    <servlet-class>org.drivemarks.web.RedirectServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>RedirectServlet</servlet-name>

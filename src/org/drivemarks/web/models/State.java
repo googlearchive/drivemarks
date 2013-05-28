@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.drivemarks.web.models;
+package org.drivemarks.web.models;
 
 import java.util.List;
 

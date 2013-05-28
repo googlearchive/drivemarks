@@ -12,18 +12,19 @@
  * the License.
  */
 
-package com.drivemarks.web;
+package org.drivemarks.web;
 
 import com.google.api.client.googleapis.json.GoogleJsonResponseException;
 import com.google.api.services.drive.model.File;
 
-import com.drivemarks.web.services.BookmarkService;
 
 import java.io.IOException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.drivemarks.web.services.BookmarkService;
 
 /**
  * Bookmarks a link on user's Drive.

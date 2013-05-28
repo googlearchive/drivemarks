@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.drivemarks.web;
+package org.drivemarks.web;
 
 import java.io.IOException;
 
@@ -23,19 +23,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Logs out the current user and redirects to homepage.
+ * Redirects user to the consent page to ask
+ * for permissions.
+ *
  * @author jbd@google.com (Burcu Dogan)
  */
 @SuppressWarnings("serial")
-public class LogoutServlet extends BaseServlet {
+public class LoginServlet extends BaseServlet {
   
   /**
-   * Logout the user and redirect to the start page.
+   * Redirects to the consent page.
    */
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
-    deleteCredential(req, resp);
-    resp.sendRedirect("/");
+    resp.sendRedirect(credentialManager.getAuthorizationUrl());
   }
 }
