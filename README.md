@@ -1,10 +1,8 @@
 # drivemarks
 
-[Drivemarks](http://www.drivemarks.org) is a bookmarklet that helps you to store your bookmarks on  Google Drive. It enables you to manage, search, share your bookmarks the way you manage your regular files and use Google Drive to launch your bookmarks.
+Drivemarks is a bookmarklet that helps you to store your bookmarks on  Google Drive. It enables you to manage, search, share your bookmarks the way you manage your regular files and use Google Drive to launch your bookmarks.
 
-Visit Drivemarks to drag and drop the drivemarks bookmarklet to your address bar and start using it.
-
-[![Screenshot](https://googledrive.com/host/0ByfSjdPVs9MZbkhjeUhMYzRTeEE/drivemarks.png)](http://www.drivemarks.org)
+![Screenshot](https://googledrive.com/host/0ByfSjdPVs9MZbkhjeUhMYzRTeEE/drivemarks.png)
 
 Drivemarks runs on Google App Engine. In order to fork a drivemarks app engine instance, follow the instructions below:
 
