@@ -4,8 +4,6 @@ Drivemarks is a bookmarklet that helps you to store your bookmarks on  Google Dr
 
 **Note**: This sample application is no longer hosted, and is left up for educational purposes.
 
-![Screenshot](https://googledrive.com/host/0ByfSjdPVs9MZbkhjeUhMYzRTeEE/drivemarks.png)
-
 Drivemarks runs on Google App Engine. In order to fork a drivemarks app engine instance, follow the instructions below:
 
 * Fork the repo: `$ clone git@github.com:googledrive/drivemarks.git`
